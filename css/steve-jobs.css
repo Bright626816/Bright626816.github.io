@@ -162,20 +162,19 @@ body, ul, table, form{
 	box-shadow:0 0 20px #999;
 }
 
-/*.sj-book .p1{
-	background-color:white;
-	background-image:url(../pics/35.jpg) !important;
-}
-/*.sj-book .p2,
+.sj-book .p1,
+.sj-book .p2,
 .sj-book .p3, 
 .sj-book .p111, 
-.sj-book .p112
+.sj-book .p112{
+	background-color:white;
+	background-image:url(../pics/book-covers.jpg) !important;
+}
+
 .sj-book .p1{
-	background-position: 'auto';
+	background-position:0 0;
 }
-.sj-book .p2{
-	url: '../pages/page3.html'
-}
+
 .sj-book .p1 .side{
 	width:5px;
 	height:600px;
@@ -228,8 +227,7 @@ body, ul, table, form{
 }
 
 
-
-/*.sj-book .p2{
+.sj-book .p2{
 	background-position:-480px 0 !important;
 }
 
@@ -243,7 +241,7 @@ body, ul, table, form{
 
 .sj-book .p112{
 	background-position:-1440px 0 !important;
-}*/
+}
 
 .sj-book .hard{
 	width:480px;

@@ -8,7 +8,7 @@ function updateDepth(book, newPage) {
 
 		newPage = newPage || page;
 
-	/*if (newPage>3)
+	if (newPage>3)
 		$('.sj-book .p2 .depth').css({
 			width: depthWidth,
 			left: 20 - depthWidth
@@ -25,7 +25,6 @@ function updateDepth(book, newPage) {
 		});
 	else
 		$('.sj-book .p111 .depth').css({width: 0});
-	*/
 
 }
 
