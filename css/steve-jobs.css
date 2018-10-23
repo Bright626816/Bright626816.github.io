@@ -173,7 +173,9 @@ body, ul, table, form{
 .sj-book .p1{
 	background-position: 'auto';
 }
-
+.sj-book .p2{
+	url: '../pages/page3.html'
+}
 /*.sj-book .p1 .side{
 	width:5px;
 	height:600px;
