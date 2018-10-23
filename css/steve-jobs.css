@@ -169,9 +169,9 @@ body, ul, table, form{
 /*.sj-book .p2,
 .sj-book .p3, 
 .sj-book .p111, 
-.sj-book .p1128*/
+.sj-book .p112*/
 .sj-book .p1{
-	background-position:0 0;
+	background-position: 'auto';
 }
 
 /*.sj-book .p1 .side{
