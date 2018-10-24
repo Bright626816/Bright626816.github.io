@@ -25,7 +25,9 @@
 	<div class="hard"></div>
 </div>
 <script type="text/javascript">
+$(window).ready(function(){
 	$("#flipbook").turn({
+		background-color:white; 
 		width: 800,
 		height: 300,
 		autoCenter: true,
@@ -33,8 +35,18 @@
 		acceleration: true,
 		elevation: 50,
 		duration: 1000,
-		pages: 12
+		pages: 12,
+		gradients: true,
+		page: 1
 	});
+});
+$(window).bind('keydown',function(e){
+	if (e.keyCode==37)
+		$('#flipbook').turn('previous');
+	else if (e.keyCode==39)
+		$('#filpbook').turn('next');
+});
+
 </script>
 
 
