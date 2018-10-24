@@ -35,6 +35,14 @@ body, ul, table, form{
     letter-spacing:2px;
     font-weight: 400;
 }
+#flipbook .page{
+    width:400px;
+    height:300px;
+    background-color:white;
+    line-height:300px;
+    font-size:20px;
+    text-align:center;
+}
 
 #flipbook .p1   {
     background-color:white;
@@ -46,14 +54,7 @@ body, ul, table, form{
     margin:70px 40px;
 }
 
-#flipbook .page{
-    width:400px;
-    height:300px;
-    background-color:white;
-    line-height:300px;
-    font-size:20px;
-    text-align:center;
-}
+
 
 #flipbook .page-wrapper{
     -webkit-perspective:2000px;
@@ -72,6 +73,7 @@ body, ul, table, form{
     -ms-box-shadow:inset 0 0 5px #666;
     box-shadow:inset 0 0 5px #666;
     font-weight:bold;
+    background-position:0 0;
 }
 
 #flipbook .odd{
