@@ -26,7 +26,8 @@
 	<div class="hard"></div>
 </div>
 <script type="text/javascript">
-/*$(window).ready(function(){
+
+$(window).ready(function(){
 	$("#flipbook").turn({
 		autoCenter: true,
 		display: 'double',
@@ -37,110 +38,9 @@
 		gradients: true,
 		page: 1
 	});
-});*/
-
-function loadApp() {
-
- 	$('#canvas').fadeIn(1000);
-
- 	var flipbook = $('.flipbook');
-
- 	// Check if the CSS was already loaded
-	
-	if (flipbook.width()==0 || flipbook.height()==0) {
-		setTimeout(loadApp, 10);
-		return;
-	}
-	
-	// Create the flipbook
-
-	flipbook.turn({
-			
-			// Magazine width
-
-			width: 922,
-
-			// Magazine height
-
-			height: 600,
-
-			// Duration in millisecond
-
-			duration: 1000,
-
-			// Hardware acceleration
-
-			acceleration: !isChrome(),
-
-			// Enables gradients
-
-			gradients: true,
-			
-			// Auto center this flipbook
-
-			autoCenter: true,
-
-			// Elevation from the edge of the flipbook when turning a page
-
-			elevation: 50,
-
-			// The number of pages
-
-			pages: 12,
-
-			// Events
-
-			when: {
-				turning: function(event, page, view) {
-					
-					var book = $(this),
-					currentPage = book.turn('page'),
-					pages = book.turn('pages');
-			
-					// Update the current URI
-
-					Hash.go('page/' + page).update();
-
-					// Show and hide navigation buttons
-
-					disableControls(page);
-					
-
-					$('.thumbnails .page-'+currentPage).
-						parent().
-						removeClass('current');
-
-					$('.thumbnails .page-'+page).
-						parent().
-						addClass('current');
+});
 
 
-
-				},
-
-				turned: function(event, page, view) {
-
-					disableControls(page);
-
-					$(this).turn('center');
-
-					if (page==1) { 
-						$(this).turn('peel', 'br');
-					}
-
-				},
-
-				missing: function (event, pages) {
-
-					// Add pages that aren't in the magazine
-
-					for (var i = 0; i < pages.length; i++)
-						addPage(pages[i], $(this));
-
-				}
-			}
-
-	});
 
 
 $(window).bind('keydown',function(e){

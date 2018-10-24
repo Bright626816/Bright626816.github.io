@@ -1,10 +1,45 @@
-body{
+
+@font-face {
+  font-family: 'Stempel-Garamond-W01-Roman';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/Stempel-Garamond-W01-Roman.woff') format('woff');
+}
+
+body, ul, table, form{
+    margin:0;
+    padding:0;
     overflow:hidden;
 }
 
 #flipbook{
-    width:400px;
-    height:300px;
+    width:960px;
+    height:600px;
+}
+
+#flipbook h1{
+    font-family: "Stempel-Garamond-W01-Roman";
+    font-size: 38px;
+    font-weight: lighter;
+    margin: 20px 0;
+    color: #333;
+    -webkit-text-fill-color: #333;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 0.005em;
+}
+
+#flipbook h2{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color:#444;
+    font-size:16px;
+    letter-spacing:2px;
+    font-weight: 400;
+}
+
+#flipbook .book-content{
+    font-family: "Stempel-Garamond-W01-Roman";
+    font-size:16px;
+    margin:70px 40px;
 }
 
 #flipbook .page{
@@ -62,4 +97,10 @@ body{
     -o-box-shadow:inset 0 0 5px #666;
     -ms-box-shadow:inset 0 0 5px #666;
     box-shadow:inset 0 0 5px #666;
+}
+
+#canvas{
+    width: 960px;
+    height: 600px;
+    margin: 100px auto;
 }
